@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Jû - Skincare de Luxo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&family=Montserrat:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Header fixo com logo e navegação -->
+    <header class="header">
+        <div class="container">
+            <a href="#" class="logo">La Jû</a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link">Início</a></li>
+                    <li><a href="#produtos" class="nav-link">Produtos</a></li>
+                    <li><a href="#ritual" class="nav-link">Ritual</a></li>
+                    <li><a href="#sobre" class="nav-link">Sobre</a></li>
+                    <li><a href="#contato" class="nav-link">Contato</a></li>
+                    <li><a href="#" class="nav-link cart-link"><i class="fas fa-shopping-bag"></i> <span class="cart-count">0</span></a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-toggle" aria-label="Menu Mobile">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Banner principal -->
+    <section id="inicio" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">Clair de Lune</h1>
+                <p class="hero-subtitle">Sérum Antioxidante para uma pele radiante</p>
+                <p class="hero-text">A luminosidade da lua capturada em uma fórmula exclusiva para renovação celular noturna.</p>
+                <a href="#produtos" class="btn">Descubra a Coleção</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Produtos -->
+    <section id="produtos" class="products">
+        <div class="container">
+            <h2 class="section-title">Nossos Produtos</h2>
+            <p class="section-subtitle">Cuidados meticulosamente formulados para resultados excepcionais</p>
+            
+            <div class="product-grid">
+                <!-- Produto 1 -->
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <h3 class="product-name">Clair de Lune</h3>
+                    <p class="product-description">Sérum noturno antioxidante com peptídeos e extrato de orquídea branca.</p>
+                    <p class="product-price">R$ 420,00</p>
+                    <button class="btn-outline add-to-cart" data-product="1">Adicionar à sacola</button>
+                </div>
+                
+                <!-- Produto 2 -->
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1571781926291-c477ebfd024b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <h3 class="product-name">Éclat du Matin</h3>
+                    <p class="product-description">Creme diurno com proteção UV e vitamina C estabilizada para luminosidade imediata.</p>
+                    <p class="product-price">R$ 380,00</p>
+                    <button class="btn-outline add-to-cart" data-product="2">Adicionar à sacola</button>
+                </div>
+                
+                <!-- Produto 3 -->
+                <div class="product-card">
+                    <div class="product-image" style="background-image: url('https://images.unsplash.com/photo-1596755094514-f87e34085b2c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60');"></div>
+                    <h3 class="product-name">Nuit Étoilée</h3>
+                    <p class="product-description">Máscara noturna regeneradora com ácido hialurônico e ceramidas.</p>
+                    <p class="product-price">R$ 390,00</p>
+                    <button class="btn-outline add-to-cart" data-product="3">Adicionar à sacola</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção Ritual -->
+    <section id="ritual" class="ritual">
+        <div class="container">
+            <h2 class="section-title">O Ritual La Jû</h2>
+            <p class="section-subtitle">Um momento sagrado de autocuidado</p>
+            
+            <div class="ritual-steps">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-moon"></i>
+                    </div>
+                    <h3 class="step-title">Preparação</h3>
+                    <p class="step-description">Comece com a limpeza suave para remover impurezas e preparar a pele para os ativos.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-spa"></i>
+                    </div>
+                    <h3 class="step-title">Aplicação</h3>
+                    <p class="step-description">Massageie os produtos com movimentos ascendentes para ativar a circulação.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="step-title">Finalização</h3>
+                    <p class="step-description">Complete com um momento de respiração consciente para potencializar os benefícios.</p>
+                </div>
+            </div>
+            
+            <div class="ritual-text">
+                <p>O ritual La Jû foi desenvolvido para transformar sua rotina de skincare em um momento de puro prazer e reconexão consigo mesma. Cada gesto é pensado para potencializar os resultados dos nossos produtos enquanto acalma a mente.</p>
+                <button class="btn ritual-video-btn" id="ritualVideoBtn">
+                    <i class="fas fa-play"></i> Assista ao Ritual
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal do Vídeo do Ritual -->
+    <div class="modal" id="ritualModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div class="video-container">
+                <iframe id="ritualVideo" src="https://www.youtube.com/embed/_9TShlMkQnc?enablejsapi=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <!-- Seção Sobre -->
+    <section id="sobre" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2 class="section-title">Sobre La Jû</h2>
+                    <p class="section-subtitle">A arte do skincare elevado</p>
+                    <p>Fundada em Paris por Juliette Laurent, La Jû nasceu da busca por fórmulas que unissem a ciência mais avançada aos ingredientes mais nobres da natureza.</p>
+                    <p>Cada produto é fruto de anos de pesquisa e desenvolvimento, com texturas que são uma experiência sensorial e resultados clinicamente comprovados.</p>
+                    <p>Nossa filosofia se baseia no conceito de que a verdadeira beleza vem de dentro, e o autocuidado é a expressão máxima de autoestima e amor próprio.</p>
+                    <button class="btn newsletter-btn" id="newsletterBtn">Assine Nossa Newsletter</button>
+                </div>
+                <div class="about-image"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal da Newsletter -->
+    <div class="modal" id="newsletterModal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <h3>Junte-se à La Jû</h3>
+            <p>Receba novidades exclusivas, dicas de skincare e ofertas especiais.</p>
+            <form id="newsletterForm">
+                <div class="form-group">
+                    <input type="text" id="name" name="name" placeholder="Seu nome" required>
+                </div>
+                <div class="form-group">
+                    <input type="email" id="email" name="email" placeholder="Seu melhor e-mail" required>
+                </div>
+                <button type="submit" class="btn">Assinar</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+    <footer id="contato" class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <a href="#" class="logo">La Jû</a>
+                    <p class="footer-slogan">La beauté commence ici</p>
+                </div>
+                
+                <div class="footer-links">
+                    <h3 class="footer-title">Explore</h3>
+                    <ul>
+                        <li><a href="#inicio">Início</a></li>
+                        <li><a href="#produtos">Produtos</a></li>
+                        <li><a href="#ritual">Ritual</a></li>
+                        <li><a href="#sobre">Sobre</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-contact">
+                    <h3 class="footer-title">Contato</h3>
+                    <p><i class="fas fa-envelope"></i> contact@laju.com</p>
+                    <p><i class="fas fa-phone"></i> (11) 98765-4321</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2023 La Jû. Todos os direitos reservados.</p>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-amex"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mini Carrinho Flutuante -->
+    <div class="mini-cart" id="miniCart">
+        <div class="mini-cart-header">
+            <h4>Seu Carrinho</h4>
+            <button class="close-mini-cart" id="closeMiniCart">&times;</button>
+        </div>
+        <div class="mini-cart-items" id="miniCartItems">
+            <!-- Itens do carrinho serão adicionados aqui via JavaScript -->
+            <p class="empty-cart-message">Seu carrinho está vazio</p>
+        </div>
+        <div class="mini-cart-footer">
+            <div class="mini-cart-total">
+                <span>Total:</span>
+                <span id="miniCartTotal">R$ 0,00</span>
+            </div>
+            <a href="#" class="btn">Finalizar Compra</a>
+        </div>
+    </div>
+
+    <script>
+        // Menu Mobile
+        const mobileMenuToggle = document.querySelector('.mobile-menu-toggle');
+        const navList = document.querySelector('.nav-list');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            navList.classList.toggle('active');
+            mobileMenuToggle.innerHTML = navList.classList.contains('active') ? 
+                '<i class="fas fa-times"></i>' : '<i class="fas fa-bars"></i>';
+        });
+
+        // Fechar menu ao clicar em um link
+        document.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                navList.classList.remove('active');
+                mobileMenuToggle.innerHTML = '<i class="fas fa-bars"></i>';
+            });
+        });
+
+        // Scroll suave para seções
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Header scroll effect
+        window.addEventListener('scroll', () => {
+            const header = document.querySelector('.header');
+            header.classList.toggle('scrolled', window.scrollY > 50);
+        });
+
+        // Modal do Vídeo do Ritual
+        const ritualModal = document.getElementById('ritualModal');
+        const ritualVideoBtn = document.getElementById('ritualVideoBtn');
+        const ritualVideo = document.getElementById('ritualVideo');
+        const closeModal = document.querySelector('.close-modal');
+
+        ritualVideoBtn.addEventListener('click', () => {
+            ritualModal.style.display = 'block';
+            ritualVideo.src += "&autoplay=1";
+        });
+
+        closeModal.addEventListener('click', () => {
+            ritualModal.style.display = 'none';
+            ritualVideo.src = ritualVideo.src.replace("&autoplay=1", "");
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === ritualModal) {
+                ritualModal.style.display = 'none';
+                ritualVideo.src = ritualVideo.src.replace("&autoplay=1", "");
+            }
+        });
+
+        // Modal da Newsletter
+        const newsletterModal = document.getElementById('newsletterModal');
+        const newsletterBtn = document.getElementById('newsletterBtn');
+        const newsletterForm = document.getElementById('newsletterForm');
+
+        newsletterBtn.addEventListener('click', () => {
+            newsletterModal.style.display = 'block';
+        });
+
+        document.querySelectorAll('.close-modal').forEach(btn => {
+            btn.addEventListener('click', () => {
+                newsletterModal.style.display = 'none';
+            });
+        });
+
+        window.addEventListener('click', (e) => {
+            if (e.target === newsletterModal) {
+                newsletterModal.style.display = 'none';
+            }
+        });
+
+        newsletterForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            alert('Obrigado por assinar nossa newsletter!');
+            newsletterModal.style.display = 'none';
+            newsletterForm.reset();
+        });
+
+        // Carrinho de Compras
+        let cart = [];
+        const cartLink = document.querySelector('.cart-link');
+        const cartCount = document.querySelector('.cart-count');
+        const miniCart = document.getElementById('miniCart');
+        const closeMiniCart = document.getElementById('closeMiniCart');
+        const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+        // Produtos disponíveis
+        const products = {
+            1: { name: 'Clair de Lune', price: 420, image: 'https://images.unsplash.com/photo-1556228578-8c89e6adf883?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' },
+            2: { name: 'Éclat du Matin', price: 380, image: 'https://images.unsplash.com/photo-1571781926291-c477ebfd024b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' },
+            3: { name: 'Nuit Étoilée', price: 390, image: 'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60' }
+        };
+
+        // Adicionar ao carrinho
+        addToCartButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const productId = button.getAttribute('data-product');
+                const product = products[productId];
+                
+                // Verifica se o produto já está no carrinho
+                const existingItem = cart.find(item => item.id === productId);
+                
+                if (existingItem) {
+                    existingItem.quantity += 1;
+                } else {
+                    cart.push({
+                        id: productId,
+                        name: product.name,
+                        price: product.price,
+                        image: product.image,
+                        quantity: 1
+                    });
+                }
+                
+                updateCart();
+                showCartNotification();
+            });
+        });
+
+        // Atualizar carrinho
+        function updateCart() {
+            // Atualizar contador
+            const totalItems = cart.reduce((total, item) => total + item.quantity, 0);
+            cartCount.textContent = totalItems;
+            
+            // Atualizar mini carrinho
+            const miniCartItems = document.getElementById('miniCartItems');
+            const miniCartTotal = document.getElementById('miniCartTotal');
+            
+            if (cart.length === 0) {
+                miniCartItems.innerHTML = '<p class="empty-cart-message">Seu carrinho está vazio</p>';
+                miniCartTotal.textContent = 'R$ 0,00';
+                return;
+            }
+            
+            miniCartItems.innerHTML = '';
+            let total = 0;
+            
+            cart.forEach(item => {
+                const itemTotal = item.price * item.quantity;
+                total += itemTotal;
+                
+                const cartItem = document.createElement('div');
+                cartItem.className = 'mini-cart-item';
+                cartItem.innerHTML = `
+                    <img src="${item.image}" alt="${item.name}">
+                    <div class="item-details">
+                        <h5>${item.name}</h5>
+                        <p>${item.quantity} x R$ ${item.price.toFixed(2)}</p>
+                    </div>
+                    <button class="remove-item" data-id="${item.id}">&times;</button>
+                `;
+                
+                miniCartItems.appendChild(cartItem);
+            });
+            
+            // Adicionar evento de remoção
+            document.querySelectorAll('.remove-item').forEach(button => {
+                button.addEventListener('click', (e) => {
+                    const productId = e.target.getAttribute('data-id');
+                    cart = cart.filter(item => item.id !== productId);
+                    updateCart();
+                });
+            });
+            
+            miniCartTotal.textContent = `R$ ${total.toFixed(2)}`;
+        }
+
+        // Mostrar notificação de item adicionado
+        function showCartNotification() {
+            const notification = document.createElement('div');
+            notification.className = 'cart-notification';
+            notification.textContent = 'Item adicionado ao carrinho!';
+            document.body.appendChild(notification);
+            
+            setTimeout(() => {
+                notification.classList.add('show');
+            }, 10);
+            
+            setTimeout(() => {
+                notification.classList.remove('show');
+                setTimeout(() => {
+                    document.body.removeChild(notification);
+                }, 300);
+            }, 3000);
+        }
+
+        // Abrir/fechar mini carrinho
+        cartLink.addEventListener('click', (e) => {
+            e.preventDefault();
+            miniCart.classList.toggle('active');
+        });
+
+        closeMiniCart.addEventListener('click', () => {
+            miniCart.classList.remove('active');
+        });
+
+        // Fechar ao clicar fora
+        window.addEventListener('click', (e) => {
+            if (!miniCart.contains(e.target) && e.target !== cartLink && !cartLink.contains(e.target)) {
+                miniCart.classList.remove('active');
+            }
+        });
+    </script>
+</body>
+</html>
